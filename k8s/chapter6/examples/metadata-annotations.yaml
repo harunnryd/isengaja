@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+  annotations:
+    description: "This is a test pod running nginx"
+    created-by: "Harun"
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx:latest
+    ports:
+    - containerPort: 80
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
