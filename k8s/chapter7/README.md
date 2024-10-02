@@ -87,13 +87,13 @@ Setelah ini, setiap perintah kubectl akan otomatis dijalankan di namespace dev-e
 ```mermaid
 graph TD
     subgraph Cluster
-        subgraph default["Namespace: default"]
+        subgraph "Namespace: default"
             Pod1["Pod 1"] --> Service1["Service 1"]
         end
-        subgraph dev-environment["Namespace: dev-environment"]
+        subgraph "Namespace: dev-environment"
             Pod2["Pod 2"] --> Service2["Service 2"]
         end
-        subgraph production["Namespace: production"]
+        subgraph "Namespace: production"
             Pod3["Pod 3"] --> Service3["Service 3"]
         end
     end
